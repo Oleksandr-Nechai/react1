@@ -1,0 +1,15 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 55px;
+  justify-content: center;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.percentage {
+  margin-top: 5px;
+}

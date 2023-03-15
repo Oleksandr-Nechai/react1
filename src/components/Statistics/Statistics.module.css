@@ -1,0 +1,21 @@
+.statistics {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+  min-height: 120px;
+  padding-top: 20px;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(231, 237, 239);
+  border-radius: 6px;
+}
+
+.title {
+  color: gray;
+}
+
+.statList {
+  display: flex;
+  margin-top: auto;
+}

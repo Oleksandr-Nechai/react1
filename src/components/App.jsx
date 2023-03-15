@@ -1,5 +1,6 @@
 import Profile from './Profile';
-import { user } from '../data';
+import Statistics from './Statistics';
+import { user, stats } from '../data';
 
 function App() {
   return (
@@ -11,6 +12,11 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics
+        title="Upload stats"
+        stats={stats.default}
+      />
+      <Statistics stats={stats.default} />
     </>
   );
 }
