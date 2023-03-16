@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import StatsBoard from 'components/StatsBoard';
 import s from './Statistics.module.css';
 
@@ -21,3 +22,12 @@ function Statistics({ title, stats }) {
   );
 }
 export default Statistics;
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+};
