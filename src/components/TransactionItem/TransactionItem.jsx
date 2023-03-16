@@ -3,7 +3,7 @@ import s from './TransactionItem.module.css';
 
 function TransactionItem({ type, amount, currency }) {
   return (
-    <tr className={s.dd}>
+    <tr className={s.tableBodyRow}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>

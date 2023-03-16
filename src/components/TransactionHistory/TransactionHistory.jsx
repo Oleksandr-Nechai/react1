@@ -5,8 +5,8 @@ import s from './TransactionHistory.module.css';
 function TransactionHistory({ items }) {
   return (
     <table className={s.transactionHistory}>
-      <thead>
-        <tr>
+      <thead className={s.tableHead}>
+        <tr className={s.tableHeadRow}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>

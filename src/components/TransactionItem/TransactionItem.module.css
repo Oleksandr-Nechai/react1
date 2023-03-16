@@ -1,0 +1,12 @@
+.tableBodyRow td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.tableBodyRow:nth-child(2n) {
+  background-color: rgb(228, 238, 238);
+}
+
+.tableBodyRow:hover {
+  background-color: rgb(199, 209, 209);
+}
