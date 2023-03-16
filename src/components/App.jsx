@@ -1,8 +1,14 @@
+import {
+  user,
+  stats,
+  friends,
+  transactions,
+} from '../data';
 import Profile from './Profile';
 import Statistics from './Statistics';
-import { user, stats, friends } from '../data';
 import Container from './Container';
 import FriendList from './FriendsList/FriendList';
+import TransactionHistory from './TransactionHistory';
 
 function App() {
   return (
@@ -27,6 +33,9 @@ function App() {
       </Container>
       <Container>
         <FriendList friends={friends.default} />
+      </Container>
+      <Container>
+        <TransactionHistory items={transactions.default} />
       </Container>
     </>
   );

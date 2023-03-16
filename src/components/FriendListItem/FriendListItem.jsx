@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { renderIntoDocument } from 'react-dom/test-utils';
 import s from './FriendListItem.module.css';
 
 function FriendListItem({ avatar, name, isOnline }) {
@@ -8,7 +7,7 @@ function FriendListItem({ avatar, name, isOnline }) {
       <span
         className={s.status}
         style={{
-          backgroundColor: { isOnline } ? 'red' : 'green',
+          backgroundColor: isOnline ? 'green' : 'red',
         }}
       ></span>
       <img
