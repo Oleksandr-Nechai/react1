@@ -23,19 +23,16 @@ function App() {
         />
       </Container>
       <Container>
-        <Statistics
-          title="Upload stats"
-          stats={stats.default}
-        />
+        <Statistics title="Upload stats" stats={stats} />
       </Container>
       <Container>
-        <Statistics stats={stats.default} />
+        <Statistics stats={stats} />
       </Container>
       <Container>
-        <FriendList friends={friends.default} />
+        <FriendList friends={friends} />
       </Container>
       <Container>
-        <TransactionHistory items={transactions.default} />
+        <TransactionHistory items={transactions} />
       </Container>
     </>
   );
